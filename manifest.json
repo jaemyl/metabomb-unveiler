@@ -1,0 +1,25 @@
+{
+  "name": "Metabomb Unveiler",
+  "version": "0.1",
+  "description": "Unblock adblock warning message and veil in the page",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["page.js"]
+    }
+  ],
+  "browser_action": {
+    "default_title": "Metabomb Unveiler",
+    "default_icon": "images/evil.png",
+    "default_popup": "popup.html"
+  },
+  "web_accessible_resources": [
+    "images/*"
+  ],
+	"icons": {
+    "16": "images/evil.png",
+    "48": "images/evil.png",
+    "128": "images/evil.png"
+  },
+  "manifest_version": 2
+}
